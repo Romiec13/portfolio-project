@@ -1,13 +1,14 @@
 :root {
     --heading-font: 'Lobster', cursive;
     --text-font: 'Inconsolata', monospace;
-    --primary-color: #f0ece2;
-    --secondary-color: #c7b198;
-    --tertiary-color: #887575;
+    --background-color:#e9e2d0;
+    --header-color:#f0ece2;
+    --primary-color: #c7b198;
+    --secondary-color: #887575;
 }
 
 .homepage {
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
 }
 
 .header {
@@ -16,11 +17,15 @@
     justify-content: center;
 }
 
+.header-background {
+    background-color: var(--header-color);
+}
+
 .homepage h1 {
     text-align: center;
     font-family: var(--heading-font);
     font-weight: bold;
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     font-size: 60px;
 }
 
@@ -28,12 +33,13 @@
     text-align: center;
     font-family: var(--text-font);
     font-size: 20px;
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     font-weight: bold;
 }
 
 p {
     text-align: left;
+    color: var(--secondary-color);
     font-weight: bold;
     font-family: var(--text-font);
     padding: 20px;
@@ -46,21 +52,33 @@ p {
 .icon-leaf {
     text-align: center;
   margin-top: 30px;
-  color: var(--secondary-color);
+  color: var(--primary-color);
     font-size: 140px;
 }
 
-.coming-soon-image {
-    filter: blur(4px);
-}
 
 .app-link {
     text-align: center;
-    background: var(--secondary-color);
+    background: var(--primary-color);
     color: white;
     margin: 20px;
     border-radius: 4px;
     padding: 20px 15px;
     text-decoration: none;
     text-transform: capitalize;
+}
+
+.app-link:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+img{
+   filter:blur(1.5px);
+}
+
+img:hover {
+    filter:blur(0px);
+    opacity: 30%;
+    transition: all 150ms ease-in-out;
 }
