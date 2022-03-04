@@ -7,26 +7,60 @@
 }
 
 .homepage {
-    text-align: center;
     background-color: var(--primary-color);
 }
 
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .homepage h1 {
+    text-align: center;
     font-family: var(--heading-font);
     font-weight: bold;
     color: var(--tertiary-color);
     font-size: 60px;
 }
 
-.homepage p {
+.homepage h2 {
+    text-align: center;
     font-family: var(--text-font);
     font-size: 20px;
     color: var(--tertiary-color);
     font-weight: bold;
 }
 
+p {
+    text-align: left;
+    font-weight: bold;
+    font-family: var(--text-font);
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 1.5;
+    
+}
+
 .icon-leaf {
+    text-align: center;
   margin-top: 30px;
   color: var(--secondary-color);
     font-size: 140px;
+}
+
+.coming-soon-image {
+    filter: blur(4px);
+}
+
+.app-link {
+    text-align: center;
+    background: var(--secondary-color);
+    color: white;
+    margin: 20px;
+    border-radius: 4px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
 }
