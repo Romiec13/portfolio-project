@@ -1,10 +1,32 @@
-h1 {
-    font-family: 'Lobster', cursive;
-    font-weight: bold;
-    font-size: 50px;
+:root {
+    --heading-font: 'Lobster', cursive;
+    --text-font: 'Inconsolata', monospace;
+    --primary-color: #f0ece2;
+    --secondary-color: #c7b198;
+    --tertiary-color: #887575;
 }
 
-p {
-    font-family: 'Inconsolata', monospace;
-    font-size: 18px;
+.homepage {
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+.homepage h1 {
+    font-family: var(--heading-font);
+    font-weight: bold;
+    color: var(--tertiary-color);
+    font-size: 60px;
+}
+
+.homepage p {
+    font-family: var(--text-font);
+    font-size: 20px;
+    color: var(--tertiary-color);
+    font-weight: bold;
+}
+
+.icon-leaf {
+  margin-top: 30px;
+  color: var(--secondary-color);
+    font-size: 140px;
 }
