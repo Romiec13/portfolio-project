@@ -1,5 +1,6 @@
 :root {
     --heading-font: 'Lobster', cursive;
+    --secondary-header-font: 'Fredoka', sans-serif;
     --text-font: 'Inconsolata', monospace;
     --background-color:#e9e2d0;
     --header-color:#f0ece2;
@@ -31,7 +32,7 @@
 
 .homepage h2 {
     text-align: center;
-    font-family: var(--text-font);
+    font-family: var(--secondary-header-font);
     font-size: 20px;
     color: var(--secondary-color);
     font-weight: bold;
@@ -49,13 +50,59 @@ p {
     
 }
 
-.icon-leaf {
+button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    border: 4px double var(--secondary-color);
+    color: var(--background-color) ;
     text-align: center;
-  margin-top: 30px;
-  color: var(--primary-color);
-    font-size: 140px;
+    font-size: 15px;
+    padding: 20px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
 }
 
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button span:after {
+    content: '\00bb';
+    color:var(--primary-color);
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: white;
+}
+
+button:hover a {
+    color: var(--primary-color);
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
 
 .app-link {
     text-align: center;
@@ -74,11 +121,14 @@ p {
 }
 
 img{
-   filter:blur(1.5px);
+   filter:blur(1px);
+   filter: grayscale(100%);
 }
 
 img:hover {
     filter:blur(0px);
-    opacity: 30%;
+    opacity: 80%;
     transition: all 150ms ease-in-out;
 }
+
+
