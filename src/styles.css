@@ -12,14 +12,19 @@
     background-color: var(--background-color);
 }
 
+.img-headshot {
+    height: 400px;
+    width: 350px;
+    float: right;
+}
+
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    float: left;
 }
 
 .header-background {
     background-color: var(--header-color);
+    
 }
 
 .homepage h1 {
@@ -132,3 +137,9 @@ img:hover {
 }
 
 
+.certification-list img {
+    height: 50px;
+    width: 200px;
+    margin-bottom: 4px;
+    filter: none;
+}
