@@ -2,10 +2,14 @@
     --heading-font: 'Lobster', cursive;
     --secondary-header-font: 'Playfair Display', serif;
     --text-font: 'Inconsolata', monospace;
-    --background-color:#e9e2d0;
-    --header-color:#f0ece2;
-    --primary-color: #c7b198;
-    --secondary-color: #887575;
+    --background-color:#ececec;
+    --primary-color: #393e46;
+    --secondary-color: #5c8d89;
+    --icon-color: #b7b7b7;
+}
+
+body {
+    background-color: var(--background-color);
 }
 
 .header-background {
@@ -43,7 +47,7 @@ h1 {
 
 .homepage p {
     text-align: left;
-    color: var(--secondary-color);
+    color: white;
     font-weight: bold;
     font-family: var(--text-font);
     padding: 20px;
@@ -63,7 +67,7 @@ h1 {
 }
 
 .skill-icons {
-    color: var(--secondary-color);
+    color: var(--icon-color);
     text-align: center;
     font-size: 50px;
     display: flex;
@@ -93,7 +97,7 @@ h1 {
 
 .certification-list a {
     text-align: center;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     color: white;
     margin: 13px;
     border-radius: 4px;
@@ -103,8 +107,8 @@ h1 {
 }
 
 .certification-list a:hover {
-    background-color: white;
-    color: var(--primary-color);
+    background-color:var(--primary-color);
+    color: white;
 }
 
 footer {
@@ -123,7 +127,7 @@ footer h2 {
 
 footer p {
     text-align: left;
-    color: black;
+    color: white;
     font-weight: bold;
     text-align: center;
     font-family: var(--text-font);
@@ -139,14 +143,14 @@ footer div {
 }
 
 footer div a {
-    color: var(--secondary-color);
+    color: white;
     font-family: var(--text-font);
     text-decoration: none;
     font-weight: bolder;
 }
 
 footer div a:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 footer span {
@@ -160,7 +164,7 @@ footer span a {
 }
 
 footer span a:hover {
-    color: var(--primary-color);
+    color: white;
 }
 
 
@@ -174,10 +178,10 @@ footer span a:hover {
 
 button {
     display: inline-block;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     border-radius: 10px;
-    border: 4px double var(--secondary-color);
-    color: var(--background-color) ;
+    border: 4px double var(--primary-color);
+    color: white ;
     text-align: center;
     font-size: 15px;
     padding: 20px;
@@ -201,7 +205,7 @@ button a {
 
 button span:after {
     content: '\00bb';
-    color:var(--primary-color);
+    color:white;
     position: absolute;
     opacity: 0;
     top: 0;
@@ -210,11 +214,11 @@ button span:after {
 }
 
 button:hover {
-    background-color: white;
+    background-color: var(--primary-color);
 }
 
 button:hover a {
-    color: var(--primary-color);
+    color: white;
 }
 
 button:hover span {
@@ -228,7 +232,7 @@ button:hover span:after {
 
 .app-link {
     text-align: center;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     color: white;
     margin: 20px;
     border-radius: 4px;
@@ -238,8 +242,8 @@ button:hover span:after {
 }
 
 .app-link:hover {
-    background-color: white;
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
 }
 
 .work-image {
