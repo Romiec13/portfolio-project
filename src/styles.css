@@ -1,6 +1,6 @@
 :root {
     --heading-font: 'Lobster', cursive;
-    --secondary-header-font: 'Fredoka', sans-serif;
+    --secondary-header-font: 'Playfair Display', serif;
     --text-font: 'Inconsolata', monospace;
     --background-color:#e9e2d0;
     --header-color:#f0ece2;
@@ -8,31 +8,29 @@
     --secondary-color: #887575;
 }
 
-.homepage {
-    background-color: var(--background-color);
+.header-background {
+    background-image: url(https://i.pinimg.com/564x/f5/5b/c7/f55bc7aac8c9d893810b47a25236e2d4.jpg);
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .img-headshot {
     height: 400px;
-    width: 350px;
+    width: 390px;
     float: right;
 }
 
 .header {
     float: left;
+    margin-top: 80px;
 }
 
-.header-background {
-    background-color: var(--header-color);
-    
-}
-
-.homepage h1 {
+h1 {
     text-align: center;
     font-family: var(--heading-font);
     font-weight: bold;
     color: var(--secondary-color);
-    font-size: 60px;
+    font-size: 70px;
 }
 
 .homepage h2 {
@@ -43,7 +41,7 @@
     font-weight: bold;
 }
 
-p {
+.homepage p {
     text-align: left;
     color: var(--secondary-color);
     font-weight: bold;
@@ -53,6 +51,125 @@ p {
     font-size: 18px;
     line-height: 1.5;
     
+}
+
+.skills-certificates-portion h2 {
+    text-align: center;
+    font-family: var(--secondary-header-font);
+    font-size: 40px;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.skill-icons {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-description {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    padding: 0 10px 0 10px;
+    margin: 0;
+    font-family: var(--text-font);
+}
+
+.certification-list img {
+    width: 150px;
+    height: 50px;
+    margin-bottom: 30px;
+ 
+}
+
+.certification-list ul {
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+.certification-list a {
+    text-align: center;
+    background: var(--primary-color);
+    color: white;
+    margin: 13px;
+    border-radius: 4px;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.certification-list a:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+footer {
+    background-image: url(https://i.pinimg.com/564x/f5/5b/c7/f55bc7aac8c9d893810b47a25236e2d4.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+footer h2 {
+    font-family: var(--secondary-header-font);
+    font-size:30px;
+    text-align: center;
+    padding: 5px 0 5px 0;
+}
+
+footer p {
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-family: var(--text-font);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+footer div {
+    color: var(--secondary-color);
+    font-size: 30px;
+    text-align: center;
+}
+
+footer div a {
+    color: var(--secondary-color);
+    font-family: var(--text-font);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer div a:hover {
+    color: var(--primary-color);
+}
+
+footer span {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+footer span a {
+    color: var(--secondary-color);
+}
+
+footer span a:hover {
+    color: var(--primary-color);
+}
+
+
+.work-page h2 {
+    text-align: center;
+    font-family: var(--secondary-header-font);
+    font-size: 60px;
+    color: var(--secondary-color);
+    font-weight: bold; 
 }
 
 button {
@@ -125,21 +242,15 @@ button:hover span:after {
     color: var(--primary-color);
 }
 
-img{
+.work-image {
    filter:blur(1px);
    filter: grayscale(100%);
 }
 
-img:hover {
+.work-image:hover {
     filter:blur(0px);
     opacity: 80%;
     transition: all 150ms ease-in-out;
 }
 
 
-.certification-list img {
-    height: 50px;
-    width: 200px;
-    margin-bottom: 4px;
-    filter: none;
-}
