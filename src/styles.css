@@ -40,7 +40,7 @@ h1 {
 .homepage h2 {
     text-align: center;
     font-family: var(--secondary-header-font);
-    font-size: 20px;
+    font-size: 23px;
     color: var(--secondary-color);
     font-weight: bold;
 }
@@ -82,6 +82,12 @@ h1 {
     font-family: var(--text-font);
 }
 
+.api, .responsive {
+    color: black;
+    font-family: var(--text-font);
+    font-weight: normal;
+}
+
 .carousel {
 width: 800px;
 height: 600px;
@@ -96,6 +102,11 @@ background-color: var(--primary-color);
     position: relative;
     width: 100%;
     overflow: hidden;
+}
+
+.carousel-image {
+    max-height: 500px;
+    margin: 0 auto;
 }
 
 .carousel-indicators li {
@@ -120,12 +131,44 @@ margin-right: 3px;
     transition: opacity .6s ease;
 }
 
-
-.dictionary-image {
-    width: 746px;
-    height: 442px;
-    text-align: center!important;
+.carousel-control-prev {
+    left: 0;
 }
+
+.carousel-control-prev {
+    position: absolute;
+    top:0;
+    bottom:0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    color: var(--icon-color);
+    text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+.carousel-control-next {
+    position: absolute;
+    top:0;
+    bottom:0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    color: var(--icon-color);
+    text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
 
 .certification-list img {
     width: 150px;
@@ -175,7 +218,7 @@ footer p {
     font-weight: bold;
     text-align: center;
     font-family: var(--text-font);
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
 }
 
@@ -198,7 +241,7 @@ footer div a:hover {
 }
 
 footer span {
-    font-size: 30px;
+    font-size: 35px;
     display: flex;
     justify-content: center;
 }
