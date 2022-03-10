@@ -4,12 +4,14 @@
     --text-font: 'Inconsolata', monospace;
     --background-color:#ececec;
     --primary-color: #393e46;
-    --secondary-color: #5c8d89;
+    --secondary-color: #9dc6a7;
     --icon-color: #b7b7b7;
 }
 
 body {
     background-color: var(--background-color);
+    max-width: auto;
+    min-width: 300px;
 }
 
 .header-background {
@@ -60,10 +62,11 @@ h1 {
 .skills-certificates-portion h2 {
     text-align: center;
     font-family: var(--secondary-header-font);
-    font-size: 40px;
+    font-size: 30px;
     color: var(--primary-color);
     font-weight: bold;
     text-decoration: underline;
+    display: block;
 }
 
 .skill-icons {
@@ -88,9 +91,13 @@ h1 {
     font-weight: normal;
 }
 
+ul {
+    padding: 0!important;
+}
+
 .carousel {
-width: 800px;
-height: 600px;
+max-width: 960px;
+max-height: 960px;
 display: block;
 margin: 0 auto;
 border: 7px double var(--icon-color);
@@ -128,7 +135,7 @@ margin-right: 3px;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     opacity: .5;
-    transition: opacity .6s ease;
+    transition: opacity .8s ease;
 }
 
 .carousel-control-prev {
@@ -169,33 +176,28 @@ margin-right: 3px;
     transition: opacity .15s ease;
 }
 
+.card {
+    display: block;
+    padding: 0 0!important;
+}
 
 .certification-list img {
     width: 150px;
     height: 50px;
-    margin-bottom: 30px;
- 
+    max-width: 960px;
+    min-width: 150px;
 }
-
-.certification-list ul {
-    list-style-type: none;
-    margin-top: 5px;
-}
-
 .certification-list a {
-    text-align: center;
     background: var(--secondary-color);
     color: white;
-    margin: 13px;
     border-radius: 4px;
-    padding: 10px 15px;
+    padding: 30px 15px;
     text-decoration: none;
     text-transform: capitalize;
 }
 
 .certification-list a:hover {
-    background-color:var(--primary-color);
-    color: white;
+    background-color:var(--icon-color);
 }
 
 footer {
